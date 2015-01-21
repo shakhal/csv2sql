@@ -1,7 +1,7 @@
 csv2sql-stream - Stream Transformer
 =======
 
-csv2sql is a Stream Transformer that lets you
+csv2sql-stream is a Stream Transformer that lets you
 transform a Stream of CSV data
 to an SQL Writable Stream
 
