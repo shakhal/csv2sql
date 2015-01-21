@@ -20,10 +20,10 @@ csv2sql.transform("DOGS", fs.createReadStream('./test.csv')).pipe(process.stdout
 ```
 #### outputs:
 ```sql
-INSERT INTO DOGS (id, name, breed) VALUES ('Akita', '1', 'Bailey');
-INSERT INTO DOGS (id, name, breed) VALUES ('Dalmatian', '2', 'Max');
-INSERT INTO DOGS (id, name, breed) VALUES ('Great Dane', '3', 'Charlie');
-INSERT INTO DOGS (id, name, breed) VALUES ('Maltese', '4', 'Lucy');
+INSERT INTO DOGS (id, name, breed) VALUES ('1', 'Bailey', 'Akita');
+INSERT INTO DOGS (id, name, breed) VALUES ('2', 'Max', 'Dalmatian');
+INSERT INTO DOGS (id, name, breed) VALUES ('3', 'Charlie', 'Great Dane');
+INSERT INTO DOGS (id, name, breed) VALUES ('4', 'Lucy', 'Maltese');
 ```
 
 #### Using pipe
@@ -40,7 +40,7 @@ csv2sql.transform("DOGS",fs.createReadStream('./dogs.csv'))
 	console.log(sql); //INSERT INTO DOGS ...
 })
 .on('end',function(rows){
-	console.log(rows); // Num of rows handled, including header
+	console.log(rows); // 5 - Num of rows handled, including header
 })
 .on('error', function(error){
 	console.error(error); //Handle error

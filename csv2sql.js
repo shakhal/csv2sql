@@ -17,15 +17,13 @@ module.exports.transform = function(tableName, instream){
 		}
 
 		//all other rows
-	  	row.unshift(row.pop());
-
 		var sqlInsert = squel.insert().into(tableName);
 		for (var i = 0; i < row.length; i++){
 			if (row[i] == undefined) row[i] = "";
 			sqlInsert.set(header[i], esc(row[i]));
 		}
 
-	    return sqlInsert.toString() + ";";
+	    return sqlInsert.toString() + ";\n";
 	})
 }
 

@@ -1,11 +1,35 @@
 {
-  "name": "CSV2SQL",
+  "name": "csv2sql",
   "version": "0.0.1",
   "scripts": {
     "start": "node csv2sql.js"
   },
   "dependencies": {
     "squel": "1.1.3",
-    "csv": "0.3.7"
-  }
+	"csv": "0.3.7"
+  },
+  "description": "csv2sql\r =======",
+  "main": "csv2sql.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shakhal/csv2sql.git"
+  },
+  "keywords": [
+    "CSV",
+    "to",
+    "SQL",
+    "Stream",
+    "Transform",
+    "node",
+    "js",
+    "nodejs"
+  ],
+  "author": "Shakhal Levinson <shakhalevinson@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shakhal/csv2sql/issues"
+  },
+  "homepage": "https://github.com/shakhal/csv2sql"
+
 }
