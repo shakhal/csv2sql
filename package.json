@@ -1,8 +1,8 @@
 {
-  "name": "csv2sql",
-  "version": "0.0.1",
+  "name": "csv2sql-stream",
+  "version": "0.0.2",
   "scripts": {
-    "start": "node csv2sql.js"
+    "start": "node csv2sql-stream.js"
   },
   "dependencies": {
     "squel": "1.1.3",

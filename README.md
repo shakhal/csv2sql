@@ -1,4 +1,4 @@
-csv2sql - Stream Transformer
+csv2sql-stream - Stream Transformer
 =======
 
 csv2sql is a Stream Transformer that lets you
@@ -7,7 +7,7 @@ to an SQL Writable Stream
 
 Installation
 ------------
-npm install csv2sql
+npm install csv2sql-stream
 
 Methods
 -------
@@ -15,8 +15,8 @@ Methods
   
 #### Using pipe
 ```javascript
-var csv2sql = require('csv2sql');
-csv2sql.transform("DOGS", fs.createReadStream('./test.csv')).pipe(process.stdout);
+var csv2sql = require('csv2sql-stream');
+csv2sql.transform("DOGS", fs.createReadStream('./dogs.csv')).pipe(process.stdout);
 ```
 #### outputs:
 ```sql

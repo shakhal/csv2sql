@@ -1,5 +1,5 @@
 var fs = require('fs');
-var csv2sql = require('./csv2sql');
+var csv2sql = require('./csv2sql-stream');
 var outstream = process.stdout;
 
 csv2sql.transform("DOGS",fs.createReadStream('./dogs.csv'))
