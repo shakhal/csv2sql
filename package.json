@@ -1,6 +1,6 @@
 {
   "name": "csv2sql-stream",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "scripts": {
     "start": "node csv2sql-stream.js"
   },
@@ -8,7 +8,7 @@
     "squel": "1.1.3",
 	"csv": "0.3.7"
   },
-  "description": "csv2sql\r =======",
+  "description": "CSV to SQL Stream Transformer",
   "main": "csv2sql.js",
   "devDependencies": {},
   "repository": {
