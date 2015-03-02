@@ -26,12 +26,6 @@ INSERT INTO DOGS (id, name, breed) VALUES ('3', 'Charlie', 'Great Dane');
 INSERT INTO DOGS (id, name, breed) VALUES ('4', 'Lucy', 'Maltese');
 ```
 
-#### Using pipe
-```javascript
-var csv2sql = require('csv2sql');
-csv2sql.transform("DOGS", fs.createReadStream('./dogs.csv')).pipe(process.stdout);
-```
-
 #### Using events
 ```javascript
 var csv2sql = require('csv2sql');
